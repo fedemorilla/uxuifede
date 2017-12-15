@@ -8,7 +8,7 @@ $gris: #E8E8E8;
 	}
 }
 @mixin md-down {
-	@media (max-width: 800px ) {
+	@media (max-width: 720px ) {
 		@content;
 	}
 }
