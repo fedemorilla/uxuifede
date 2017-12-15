@@ -7,6 +7,11 @@ $gris: #E8E8E8;
 		@content;
 	}
 }
+@mixin md-down {
+	@media (max-width: 800px ) {
+		@content;
+	}
+}
 @mixin lg-down {
 	@media (max-width: 992px ) {
 		@content;
@@ -146,6 +151,10 @@ h1, h2, h3 {
 h2 {
 	font-size: 1.7rem;
 	text-transform: uppercase;
+	@include sm-down {
+		font-size: 1rem;
+		text-transform: none;
+	}
 
 }
 h3 {
@@ -219,6 +228,11 @@ footer {
 }
 .hide-lg-down {
 	@include lg-down {
+		display: none;
+	}
+}
+.hide-md-down {
+	@include md-down {
 		display: none;
 	}
 }
