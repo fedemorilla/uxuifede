@@ -3,7 +3,8 @@
 	background-color: hsla(0,0%,0%,0.13);
 }*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,800");
-@import url(" ../fonts/FontAwesome.otf");
+@import url("../fonts/FontAwesome.otf");
+/* Scss Document */
 body {
   background-color: white; }
 
@@ -15,7 +16,7 @@ body {
     color: white; }
 
 #index .header {
-  background: url(" ../img/back_img/home_img.jpg") center center no-repeat;
+  background: url("../img/back_img/home_img.jpg") center center no-repeat;
   background-size: cover; }
   #index .header:before {
     content: '';
@@ -67,8 +68,9 @@ body {
     opacity: .9; }
 
 #resume .header {
-  background: url(" ../img/back_img/fede_img.jpg") center center no-repeat;
-  background-size: cover; }
+  background: url(" ../img/fede.jpg") center center no-repeat;
+  background-size: cover;
+  filter: FlipH; }
   #resume .header:before {
     content: '';
     position: absolute;

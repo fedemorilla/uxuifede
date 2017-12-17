@@ -29,14 +29,19 @@ $gris: #E8E8E8;
 	background-color: $azul-oscuro;
 
 }
+@mixin img-fot {
+	background-size:cover;
 
+}
 /** {
 	background-color: hsla(0,0%,0%,0.13);
 }*/
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,800');
-@import url(' ../fonts/FontAwesome.otf');
+@import url('../fonts/FontAwesome.otf');
+@import ' fit-images.scss';
+
 
 body {
 	background-color: white;
@@ -55,7 +60,7 @@ body {
 #index {
 	.header {
 		
-		background: url(' ../img/back_img/home_img.jpg') center center no-repeat;
+		background: url('../img/back_img/home_img.jpg') center center no-repeat;
   background-size:cover;
 		&:before {
     content: '';
@@ -128,8 +133,9 @@ body {
 #resume {
 	.header {
 		
-		background: url(' ../img/back_img/fede_img.jpg') center center no-repeat;
+		background: url(' ../img/fede.jpg') center center no-repeat;
   background-size:cover;
+		filter: FlipH;
 		&:before {
     content: '';
 	position: absolute;
