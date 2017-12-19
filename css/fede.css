@@ -185,3 +185,18 @@ footer {
 .sticky-top a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
+
+.modal-body {
+  padding: 0px; }
+
+.modal-dialog {
+  max-width: 1000px; }
+
+.modal-dialog-600 {
+  max-width: 600px !important; }
+
+.display-4 {
+  font-size: 2rem; }
+
+.blockquote-footer {
+  background-color: white; }
